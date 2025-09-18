@@ -1,0 +1,81 @@
+/* Custom styles for the Bootstrap 5 project */
+/* Icon sizing and spacing */
+.bi {
+	vertical-align: middle;
+	font-size: 2.5rem;
+}
+
+/* Animated button ripple effect */
+.btn {
+	position: relative;
+	overflow: hidden;
+	transition: box-shadow 0.2s;
+}
+.btn:active::after {
+	content: '';
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	width: 120%;
+	height: 120%;
+	background: rgba(13,110,253,0.15);
+	border-radius: 50%;
+	transform: translate(-50%, -50%) scale(0);
+	animation: ripple 0.5s linear;
+	pointer-events: none;
+}
+@keyframes ripple {
+	to {
+		transform: translate(-50%, -50%) scale(1.2);
+		opacity: 0;
+	}
+}
+body {
+	font-family: 'Roboto', Arial, sans-serif;
+	background-color: #f8f9fa;
+	color: #222;
+}
+
+.navbar-brand {
+	letter-spacing: 1px;
+	font-size: 1.5rem;
+}
+
+section {
+	scroll-margin-top: 80px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Roboto', Arial, sans-serif;
+	font-weight: 700;
+}
+
+.card-title {
+	color: #0d6efd;
+}
+
+.card {
+	border-radius: 1rem;
+}
+
+.carousel-inner img, .img-fluid {
+	object-fit: cover;
+	min-height: 250px;
+	max-height: 350px;
+}
+
+footer {
+	font-size: 1rem;
+	background: #f8f9fa;
+}
+
+/* Responsive tweaks */
+@media (max-width: 767.98px) {
+	.navbar-brand {
+		font-size: 1.2rem;
+	}
+	.carousel-inner img, .img-fluid {
+		min-height: 180px;
+		max-height: 220px;
+	}
+}
