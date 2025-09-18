@@ -66,7 +66,7 @@ TechNova is a modern, responsive 3-page website built with Bootstrap 5, inspired
 
 ## Submission
 - GitHub Repository: https://github.com/varungovindu/keshavSoft
-- Live Preview: _[your live site URL here]_
+- Live Preview: https://varungovindu.github.io/keshavSoft/
 
 ---
 **Transparency:** This project was built using Bootstrap documentation, GitHub Copilot, and my own design ideas. No external images or code were copy-pasted.
